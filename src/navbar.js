@@ -12,7 +12,13 @@ const ICIPNavbar = () => {
 
   return (
     <>
-      <Navbar className="bg-dark-navbar" bg="dark" variant="dark" sticky="top">
+      <Navbar
+        className="bg-dark-navbar"
+        bg="dark"
+        variant="dark"
+        sticky="top"
+        expand="lg"
+      >
         <Container>
           <Navbar.Brand href="#home">IEEE ICIP 2023</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
