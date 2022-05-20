@@ -22,10 +22,14 @@ h2 {
     color: white;
 }
 
+h3 {
+    color: #0053d6;
+}
+
 .landing-page-content {
     text-align: center;
     margin-top: 100px;
-    background-color: #006599;
+    background-color: #0053d6;
     height: 400px;
     opacity: 0.9;
 }
@@ -50,10 +54,18 @@ h2 {
 }
 
 .footer {
-    background-color: #069;
+    background-color: #0053d6;
     padding: 40px 10%;
     margin-top: 90px;
     color: #fff;
     font-size: 12px;
     line-height: 22px;
+}
+
+.landing-page-important-dates:hover {
+    background-color: #d3ffed;
+}
+
+.landing-page-important-dates {
+    background-color: white;
 }

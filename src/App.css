@@ -1,5 +1,9 @@
 .App {
   text-align: center;
+  font-family: 'DM Sans',sans-serif;
+  line-height: 160%;
+  -webkit-font-smoothing: antialiased;
+  background-color: #f0f5f5;
 }
 
 /*.App-logo {*/

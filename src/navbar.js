@@ -20,11 +20,11 @@ const ICIPNavbar = () => {
         expand="lg"
       >
         <Container>
-          <Navbar.Brand href="#home">IEEE ICIP 2023</Navbar.Brand>
+          <Navbar.Brand href="/">IEEE ICIP 2023</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="#home">Home</Nav.Link>
+              <Nav.Link href="/">Home</Nav.Link>
               <NavDropdown
                 title="General"
                 id="basic-nav-dropdown"
@@ -33,7 +33,7 @@ const ICIPNavbar = () => {
                 onMouseEnter={() => setShowGeneral(!showGeneral)}
                 onMouseLeave={() => setShowGeneral(false)}
               >
-                <NavDropdown.Item href="#action/3.1">
+                <NavDropdown.Item href="/committee">
                   Organizing Commitee
                 </NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.2">
