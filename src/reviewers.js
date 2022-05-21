@@ -139,9 +139,12 @@ const Reviewers = ({ reviewers }) => {
       </ul>
       <h4>Preprint Servers</h4>
       <p>
-        Does IEEE consider authors posting their articles on preprint servers or
-        on their companies’ web sites to be a form of prior publication, which
-        may then disqualify the articles from further editorial consideration?
+        <b>
+          Does IEEE consider authors posting their articles on preprint servers
+          or on their companies’ web sites to be a form of prior publication,
+          which may then disqualify the articles from further editorial
+          consideration?
+        </b>
       </p>
       <p>
         No. IEEE policy allows authors to submit previously posted articles to
@@ -150,8 +153,10 @@ const Reviewers = ({ reviewers }) => {
         another party prior to submission.
       </p>
       <p>
-        Does the policy affect how authors post their articles on preprint
-        servers such as TechRxiv or ArXiv?
+        <b>
+          Does the policy affect how authors post their articles on preprint
+          servers such as TechRxiv or ArXiv?
+        </b>
       </p>
       <p>
         Yes. The IEEE recognizes that many authors share their unpublished
