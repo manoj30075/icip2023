@@ -6,6 +6,16 @@
   background-color: #f0f5f5;
 }
 
+.p-200{
+  padding-bottom: 200px;
+}
+
+.white-container {
+  background-color: #fff;
+  padding: 20px;
+  margin: 20px 0;
+}
+
 /*.App-logo {*/
 /*  height: 40vmin;*/
 /*  pointer-events: none;*/

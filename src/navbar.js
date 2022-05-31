@@ -9,18 +9,19 @@ const ICIPNavbar = () => {
   const [showAuthors, setShowAuthors] = useState(false);
   const [showProgram, setShowProgram] = useState(false);
   const [showExhibitors, setShowExhibitors] = useState(false);
+  const [showVenue, setShowVenue] = useState(false);
 
   return (
     <>
       <Navbar
-        className="bg-dark-navbar"
+        className="bg-dark-navbar me-auto"
         bg="dark"
         variant="dark"
         sticky="top"
         expand="lg"
       >
         <Container>
-          <Navbar.Brand href="/">IEEE ICIP 2023</Navbar.Brand>
+          <Navbar.Brand href="/">IEEE IV 2023</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
@@ -30,46 +31,42 @@ const ICIPNavbar = () => {
                 id="basic-nav-dropdown"
                 menuVariant="dark"
                 show={showGeneral}
-                onMouseEnter={() => setShowGeneral(!showGeneral)}
-                onMouseLeave={() => setShowGeneral(false)}
+                onClick={() => setShowGeneral(!showGeneral)}
               >
                 <NavDropdown.Item href="/committee">
                   Organizing Commitee
                 </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">
+                <NavDropdown.Item href="/tba">
                   Conference Policies
                 </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">
+                <NavDropdown.Item href="/tba">
                   IEEE Event Conduct and Safety
                 </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.4">
-                  Contact Us
-                </NavDropdown.Item>
+                <NavDropdown.Item href="/tba">Contact Us</NavDropdown.Item>
               </NavDropdown>
               <NavDropdown
                 title="Calls"
                 id="basic-nav-dropdown"
                 menuVariant="dark"
                 show={showCalls}
-                onMouseEnter={() => setShowCalls(!showCalls)}
-                onMouseLeave={() => setShowCalls(false)}
+                onClick={() => setShowCalls(!showCalls)}
               >
-                <NavDropdown.Item href="#action/3.1">
-                  Calls for Industry demo
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">
-                  Calls for Challenge sessions
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">
+                <NavDropdown.Item href="/call-for-papers">
                   Calls for Papers
                 </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.4">
+                <NavDropdown.Item href="/tba">
+                  Calls for Industry demo
+                </NavDropdown.Item>
+                <NavDropdown.Item href="/tba">
+                  Calls for Challenge sessions
+                </NavDropdown.Item>
+                <NavDropdown.Item href="/tba">
                   Calls for Special session proposals
                 </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">
+                <NavDropdown.Item href="/call-for-tutorials">
                   Calls for Tutorial proposals
                 </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.4">
+                <NavDropdown.Item href="/call-for-journal-presentations">
                   Calls for Journal presentations
                 </NavDropdown.Item>
               </NavDropdown>
@@ -78,51 +75,64 @@ const ICIPNavbar = () => {
                 id="basic-nav-dropdown"
                 menuVariant="dark"
                 show={showAuthors}
-                onMouseEnter={() => setShowAuthors(!showAuthors)}
-                onMouseLeave={() => setShowAuthors(false)}
+                onClick={() => setShowAuthors(!showAuthors)}
               >
-                <NavDropdown.Item href="#action/3.1">
-                  Paper kit
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">
+                <NavDropdown.Item href="/tba">Paper kit</NavDropdown.Item>
+                <NavDropdown.Item href="/tba">
                   Paper submission
                 </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">Awards</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.4">
+                <NavDropdown.Item href="/tba">Awards</NavDropdown.Item>
+                <NavDropdown.Item href="/tba">
                   Author Presentation Preparation Instructions
                 </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">
+                <NavDropdown.Item href="/tba">
                   Virtual Presentation Upload
                 </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.4">
+                <NavDropdown.Item href="/tba">
                   SPS Travel Grants
                 </NavDropdown.Item>
               </NavDropdown>
-              <Nav.Link href="#reg">Registration</Nav.Link>
+              <Nav.Link href="/tba">Registration</Nav.Link>
               <NavDropdown
                 title="Program"
                 id="basic-nav-dropdown"
                 menuVariant="dark"
                 show={showProgram}
-                onMouseEnter={() => setShowProgram(!showProgram)}
-                onMouseLeave={() => setShowProgram(false)}
+                onClick={() => setShowProgram(!showProgram)}
               >
-                <NavDropdown.Item href="#action/3.1">
-                  Paper kit
+                <NavDropdown.Item href="/tba">
+                  Virtual Platform Information
                 </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">
-                  Paper submission
+                <NavDropdown.Item href="/tba">
+                  Technical Program
                 </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">Awards</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.4">
-                  Author Presentation Preparation Instructions
+                <NavDropdown.Item href="/tba">
+                  Plenary Speakers
                 </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">
-                  Virtual Presentation Upload
+                <NavDropdown.Item href="/tba">
+                  Special Sessions
                 </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.4">
-                  SPS Travel Grants
+                <NavDropdown.Item href="/tba">
+                  Challenge Sessions
                 </NavDropdown.Item>
+                <NavDropdown.Item href="/tba">
+                  Industry Demo Show & Tell Program
+                </NavDropdown.Item>
+                <NavDropdown.Item href="/tba">VIP Cup</NavDropdown.Item>
+                <NavDropdown.Item href="/tba">5-MICC</NavDropdown.Item>
+                <NavDropdown.Item href="/tba">
+                  Women in Signal Processing Event
+                </NavDropdown.Item>
+                <NavDropdown.Item href="/tba">
+                  Young Professionals Panel Discussion
+                </NavDropdown.Item>
+                <NavDropdown.Item href="/tba">
+                  Student Job Fair
+                </NavDropdown.Item>
+                <NavDropdown.Item href="/tba">
+                  NOAA Invited Talk
+                </NavDropdown.Item>
+                <NavDropdown.Item href="/tba">PROGRESS</NavDropdown.Item>
               </NavDropdown>
               <NavDropdown
                 title="Exhibitors and Patrons"
@@ -130,25 +140,26 @@ const ICIPNavbar = () => {
                 menuVariant="dark"
                 rootCloseEvent="mousedown"
                 show={showExhibitors}
-                onMouseEnter={() => setShowExhibitors(!showExhibitors)}
-                onMouseLeave={() => setShowExhibitors(false)}
+                onClick={() => setShowExhibitors(!showExhibitors)}
               >
-                <NavDropdown.Item href="#action/3.1">
-                  Paper kit
+                <NavDropdown.Item href="/tba">
+                  Current Sponsors
                 </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">
-                  Paper submission
+                <NavDropdown.Item href="/tba">Prospectus</NavDropdown.Item>
+                <NavDropdown.Item href="/tba">Floor Plan</NavDropdown.Item>
+                <NavDropdown.Item href="/tba">
+                  Booth Space Application
                 </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">Awards</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.4">
-                  Author Presentation Preparation Instructions
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">
-                  Virtual Presentation Upload
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.4">
-                  SPS Travel Grants
-                </NavDropdown.Item>
+              </NavDropdown>
+              <NavDropdown
+                title="Venue"
+                id="basic-nav-dropdown"
+                menuVariant="dark"
+                rootCloseEvent="mousedown"
+                show={showVenue}
+                onClick={() => setShowVenue(!showVenue)}
+              >
+                <NavDropdown.Item href="/tba">Anchorage</NavDropdown.Item>
               </NavDropdown>
             </Nav>
           </Navbar.Collapse>

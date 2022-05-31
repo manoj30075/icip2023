@@ -2,29 +2,6 @@ import React from "react";
 import { Row, Col } from "react-bootstrap";
 import "./landingPage.css";
 
-const topicsOfInterest = [
-  "Advanced Driver Assistance Systems",
-  "Policies and Regulations for IV",
-  "Automated Vehicles",
-  "Autonomous / Intelligent Robotic Vehicles",
-  "Connected & Cooperative Vehicles",
-  "Image, Radar, Lidar Signal Processing",
-  "Vehicular Safety, Active and Passive",
-  "Information Fusion",
-  "Vehicle Environment Perception",
-  "Vehicle Control",
-  "Driver State and Intent Recognition",
-  "Human Factors",
-  "Smart Infrastructure",
-  "Intelligent Vehicle Software Infrastructure",
-  "Artificial Intelligence",
-  "Teleoperation of IV",
-  "Collision Avoidance",
-  "Ethics and IV",
-  "Pedestrian Protection",
-  "Advanced sensing and recognition",
-];
-
 const importantDateNames = {
   paper_submission_deadline: "Paper Submission Deadline",
   special_session_proposal: "Special Session Proposal",
@@ -73,36 +50,12 @@ const organizingCommittee = [
 
 const contactCommitee = [
   {
-    name: "Brendan Morris ",
-    position: "Industry Chair",
-    email: "",
-  },
-  {
-    name: "Johannes Betz",
-    position: "Tutorial Co-Chair",
-    email: "",
+    name: "Sohail Dianat",
+    email: "sadeee@rit.edu",
   },
 ];
 
 const LandingPage = () => {
-  const renderTopicsOfInterest = () => {
-    return (
-      <div
-        className="landing-page-important-dates"
-        style={{ padding: 20, marginBottom: 10 }}
-      >
-        <p style={{ color: "#0053d6", fontSize: 28, textAlign: "left" }}>
-          Topics of Interest
-        </p>
-        <ul style={{ fontSize: 16, color: "#123693" }}>
-          {topicsOfInterest.map((topic) => {
-            return <li style={{ textAlign: "left" }}>{topic}</li>;
-          })}
-        </ul>
-      </div>
-    );
-  };
-
   const renderImportantDates = () => {
     return (
       <div
@@ -112,7 +65,7 @@ const LandingPage = () => {
         <p style={{ color: "#0053d6", fontSize: 28, textAlign: "left" }}>
           Important Dates
         </p>
-        <table style={{ width: "100%", color: "#828892" }}>
+        <table style={{ width: "100%" }}>
           <tbody>
             {Object.keys(importantDateNames).map((date) => {
               return (
@@ -141,7 +94,7 @@ const LandingPage = () => {
         <p style={{ color: "#0053d6", fontSize: 28, textAlign: "left" }}>
           Organizing Committee
         </p>
-        <table style={{ width: "100%", color: "#828892" }}>
+        <table style={{ width: "100%" }}>
           <tbody>
             {organizingCommittee.map((member) => {
               return (
@@ -176,7 +129,7 @@ const LandingPage = () => {
         <p style={{ color: "#0053d6", fontSize: 28, textAlign: "left" }}>
           Contact
         </p>
-        <table style={{ width: "100%", color: "#828892" }}>
+        <table style={{ width: "100%" }}>
           <tbody>
             {contactCommitee.map((member) => {
               return (
@@ -194,7 +147,7 @@ const LandingPage = () => {
                       textAlign: "left",
                     }}
                   >
-                    {member.position}
+                    {member.email}
                   </td>
                 </tr>
               );
@@ -206,12 +159,12 @@ const LandingPage = () => {
   };
 
   return (
-    <>
+    <div className="p-200">
       <Row>
         <Col className="landing-page">
           <Col md={{ offset: 6 }} className="landing-page-content">
             <div className="landing-page-content-text">
-              <h1>IEEE IV 2023</h1>
+              <h1>IEEE INTELLIGENT VEHICLES SYMPOSIUM (IV 2023)</h1>
               <h2>Anchorage, Alaska, USA June 4 – 7, 2023</h2>
             </div>
           </Col>
@@ -220,7 +173,7 @@ const LandingPage = () => {
       <div style={{ padding: "0 30px" }}>
         <Row style={{ backgroundColor: "white", margin: "40px 0px" }}>
           <Col className="landing-page-welcome">
-            <h3>Welcome to ICIP 2023</h3>
+            <h3>Welcome to IEEE IV Symposium 2023</h3>
             <p>
               <span style={{ color: "#0053d6" }}>
                 THE IEEE INTELLIGENT VEHICLES SYMPOSIUM (IV 2023)
@@ -245,28 +198,19 @@ const LandingPage = () => {
                 Memorable Social Program.
               </span>
             </p>
-            &nbsp;
-            <p style={{ color: "#123693" }}>
-              Authors are invited to submit full-length papers up to 6 pages for
-              technical content including figures and references. To maximize
-              visibility and impact, all accepted papers will be published in
-              IEEE Xplore digital library through Open Preview and will be
-              freely accessible and downloadable by all, in final format,
-              beginning one month prior to the conference and through the
-              conference end date.
-            </p>
           </Col>
         </Row>
         <Row>
-          <Col md={6}>{renderTopicsOfInterest()}</Col>
           <Col md={6}>
             <Col>{renderImportantDates()}</Col>
-            <Col>{renderOrganizingCommittee()}</Col>
             <Col>{renderContactCommittee()}</Col>
+          </Col>
+          <Col md={6}>
+            <Col>{renderOrganizingCommittee()}</Col>
           </Col>
         </Row>
       </div>
-    </>
+    </div>
   );
 };
 

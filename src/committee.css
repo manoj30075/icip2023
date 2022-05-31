@@ -4,9 +4,12 @@
   margin-top: 20px;
 }
 
+.committee {
+  margin: auto
+}
+
 .committee-member {
-  margin-left: 60px;
-  margin-top: 20px;
+  margin: 20px 100px;
   background-color: white;
   padding: 40px;
 }
@@ -17,7 +20,6 @@
 
 .committee-member-image {
   /* round image of 20px  */
-  border-radius: 100px;
   /* border: 1px solid #ccc; */
   margin-right: 20px;
   margin-bottom: 20px;
@@ -30,9 +32,9 @@
   margin-top: 50px;
   margin-bottom: 10px;
   color: #123693;
+  font-size: 18px;
 }
 
 .committee-member-title {
-color: #828892;
-  font-size: 14px;
+  font-size: 16px;
 }

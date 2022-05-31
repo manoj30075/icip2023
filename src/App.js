@@ -6,6 +6,10 @@ import ICIPNavbar from "./navbar";
 import LandingPage from "./landingPage";
 import Committee from "./committee";
 import Reviewers from "./reviewers";
+import CallForPapers from "./callForPapers";
+import Tba from "./tba";
+import CallForTutorials from "./callForTutorials";
+import CallForJournalPresentations from "./callForJournalPresentations";
 import { Col, Row } from "react-bootstrap";
 
 class App extends React.Component {
@@ -17,6 +21,13 @@ class App extends React.Component {
           <Route path="/" element={<LandingPage />} />
           <Route path="/committee" element={<Committee />} />
           <Route path="/reviewers" element={<Reviewers />} />
+          <Route path="/call-for-papers" element={<CallForPapers />} />
+          <Route path="/tba" element={<Tba />} />
+          <Route path="/call-for-tutorials" element={<CallForTutorials />} />
+          <Route
+            path="/call-for-journal-presentations"
+            element={<CallForJournalPresentations />}
+          />
         </Routes>
         <Row>
           <Col className="footer">
