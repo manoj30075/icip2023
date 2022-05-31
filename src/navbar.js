@@ -4,13 +4,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./navbar.css";
 
 const ICIPNavbar = () => {
-  const [showGeneral, setShowGeneral] = useState(false);
-  const [showCalls, setShowCalls] = useState(false);
-  const [showAuthors, setShowAuthors] = useState(false);
-  const [showProgram, setShowProgram] = useState(false);
-  const [showExhibitors, setShowExhibitors] = useState(false);
-  const [showVenue, setShowVenue] = useState(false);
-
   return (
     <>
       <Navbar
@@ -30,8 +23,6 @@ const ICIPNavbar = () => {
                 title="General"
                 id="basic-nav-dropdown"
                 menuVariant="dark"
-                show={showGeneral}
-                onClick={() => setShowGeneral(!showGeneral)}
               >
                 <NavDropdown.Item href="/committee">
                   Organizing Commitee
@@ -48,8 +39,6 @@ const ICIPNavbar = () => {
                 title="Calls"
                 id="basic-nav-dropdown"
                 menuVariant="dark"
-                show={showCalls}
-                onClick={() => setShowCalls(!showCalls)}
               >
                 <NavDropdown.Item href="/call-for-papers">
                   Calls for Papers
@@ -74,8 +63,6 @@ const ICIPNavbar = () => {
                 title="Authors"
                 id="basic-nav-dropdown"
                 menuVariant="dark"
-                show={showAuthors}
-                onClick={() => setShowAuthors(!showAuthors)}
               >
                 <NavDropdown.Item href="/tba">Paper kit</NavDropdown.Item>
                 <NavDropdown.Item href="/tba">
@@ -97,8 +84,6 @@ const ICIPNavbar = () => {
                 title="Program"
                 id="basic-nav-dropdown"
                 menuVariant="dark"
-                show={showProgram}
-                onClick={() => setShowProgram(!showProgram)}
               >
                 <NavDropdown.Item href="/tba">
                   Virtual Platform Information
@@ -139,8 +124,6 @@ const ICIPNavbar = () => {
                 id="basic-nav-dropdown"
                 menuVariant="dark"
                 rootCloseEvent="mousedown"
-                show={showExhibitors}
-                onClick={() => setShowExhibitors(!showExhibitors)}
               >
                 <NavDropdown.Item href="/tba">
                   Current Sponsors
@@ -156,8 +139,6 @@ const ICIPNavbar = () => {
                 id="basic-nav-dropdown"
                 menuVariant="dark"
                 rootCloseEvent="mousedown"
-                show={showVenue}
-                onClick={() => setShowVenue(!showVenue)}
               >
                 <NavDropdown.Item href="/tba">Anchorage</NavDropdown.Item>
               </NavDropdown>
