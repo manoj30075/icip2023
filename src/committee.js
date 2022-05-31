@@ -129,7 +129,7 @@ const Committee = () => {
       <div>
         {committee.map((member) => (
           <div>
-            <h4 style={{ margin: "20px 100px" }}>
+            <h4 style={{ margin: "20px" }}>
               <b>{member.title}</b>
             </h4>
             {member.people.map((person) => (
