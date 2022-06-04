@@ -6,7 +6,7 @@ import { Col, Row } from "react-bootstrap";
 const CallForTutorials = () => {
   return (
     <div className="p-200 cft">
-      <h3 className="cft-heading">Call for tutorials</h3>
+      <h3 className="cft-heading">Call for Tutorials</h3>
       <Row>
         <Col className="white-container">
           The 29th IEEE International Symposium on Intelligent Vehicles, IV 2023

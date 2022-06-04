@@ -6,7 +6,7 @@ import "./callForJournalPresentations.css";
 const CallForJournalPresentations = () => {
   return (
     <div className="p-200 cfjp">
-      <h3 className="cfjp-heading">Call For Journal Presentations</h3>
+      <h3 className="cfjp-heading">Call for Journal Presentations</h3>
       <Row>
         <Col className="white-container">
           <p>

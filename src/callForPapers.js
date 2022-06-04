@@ -59,7 +59,30 @@ const CallForPapers = () => {
 
   const renderAuthorsNotes = () => (
     <Row>
-      <Col md={12} className="white-container">
+      <Col md={12} className="white-container hover-col">
+        <p>
+          <span style={{ color: "#0053d6" }}>
+            THE IEEE INTELLIGENT VEHICLES SYMPOSIUM (IV 2023)
+          </span>{" "}
+          <span style={{ color: "#123693" }}>
+            is the premier annual forum organized by the IEEE Intelligent
+            Transportation Systems Society (ITSS). Researchers, academicians,
+            and practitioners from universities, industry, and government
+            agencies are invited to submit their latest research papers,
+            simulation challenges, and applications on Intelligent Vehicles and
+            Intelligent Vehicle Infrastructures. The conference will feature
+            Plenary Talks, Technical Sessions, Poster Sessions, Tutorials,
+            Workshops, Exhibition and Industrial Demo Challenges. The technical
+            presentations are characterized by a single session format so that
+            all attendees remain in a single room for multilateral
+            communications in an informal atmosphere. Workshops will be offered
+            on the first day followed by three days of presentations and a
+            vehicle demonstration day. An exhibition area will be available for
+            the presentation of products and projects. The IEEE IV 2023 will
+            take place in Anchorage Alaska, USA and will offer a competitive
+            Technical Program and a Memorable Social Program.
+          </span>
+        </p>
         <p style={{ color: "#123693" }}>
           Authors are invited to submit full-length papers up to 6 pages for
           technical content including figures and references. To maximize
@@ -73,7 +96,7 @@ const CallForPapers = () => {
   );
   return (
     <div className="cfp p-200">
-      <h3 className="cfp-heading-1">Call for papers</h3>
+      <h3 className="cfp-heading-1">Call for Papers</h3>
       {renderAuthorsNotes()}
       {renderTopicsOfInterest()}
     </div>

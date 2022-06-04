@@ -10,6 +10,11 @@ import CallForPapers from "./callForPapers";
 import Tba from "./tba";
 import CallForTutorials from "./callForTutorials";
 import CallForJournalPresentations from "./callForJournalPresentations";
+import ConferencePolicies from "./conference-policies";
+import ConductAndSafety from "./conduct-and-safety";
+import Contacts from "./contacts";
+import Accommodations from "./accommodations";
+import CallForChallengeSessions from "./call-for-challenge-sessions";
 import { Col, Row } from "react-bootstrap";
 
 class App extends React.Component {
@@ -27,6 +32,14 @@ class App extends React.Component {
           <Route
             path="/call-for-journal-presentations"
             element={<CallForJournalPresentations />}
+          />
+          <Route path="/conference-policies" element={<ConferencePolicies />} />
+          <Route path="/conduct-and-safety" element={<ConductAndSafety />} />
+          <Route path="/contacts" element={<Contacts />} />
+          <Route path="/accommodations" element={<Accommodations />} />
+          <Route
+            path="/call-for-challenge-sessions"
+            element={<CallForChallengeSessions />}
           />
         </Routes>
         <Row>

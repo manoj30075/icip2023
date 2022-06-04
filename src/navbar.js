@@ -27,13 +27,13 @@ const ICIPNavbar = () => {
                 <NavDropdown.Item href="/committee">
                   Organizing Commitee
                 </NavDropdown.Item>
-                <NavDropdown.Item href="/tba">
+                <NavDropdown.Item href="/conference-policies">
                   Conference Policies
                 </NavDropdown.Item>
-                <NavDropdown.Item href="/tba">
+                <NavDropdown.Item href="/conduct-and-safety">
                   IEEE Event Conduct and Safety
                 </NavDropdown.Item>
-                <NavDropdown.Item href="/tba">Contact Us</NavDropdown.Item>
+                <NavDropdown.Item href="/contacts">Contact Us</NavDropdown.Item>
               </NavDropdown>
               <NavDropdown
                 title="Calls"
@@ -46,7 +46,7 @@ const ICIPNavbar = () => {
                 <NavDropdown.Item href="/tba">
                   Calls for Industry demo
                 </NavDropdown.Item>
-                <NavDropdown.Item href="/tba">
+                <NavDropdown.Item href="/call-for-challenge-sessions">
                   Calls for Challenge sessions
                 </NavDropdown.Item>
                 <NavDropdown.Item href="/tba">
@@ -141,6 +141,9 @@ const ICIPNavbar = () => {
                 rootCloseEvent="mousedown"
               >
                 <NavDropdown.Item href="/tba">Anchorage</NavDropdown.Item>
+                <NavDropdown.Item href="/accommodations">
+                  Accommodations
+                </NavDropdown.Item>
               </NavDropdown>
             </Nav>
           </Navbar.Collapse>

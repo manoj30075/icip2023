@@ -125,7 +125,7 @@ const committee = [
 const Committee = () => {
   return (
     <Row className="committee container p-200">
-      <h3 className="committee-heading">Organizing committee</h3>
+      <h3 className="committee-heading">Organizing Committee</h3>
       <div>
         {committee.map((member) => (
           <div>

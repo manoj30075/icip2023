@@ -6,8 +6,22 @@
   background-color: #f0f5f5;
 }
 
+.hover-col:hover {
+  background-color: #d3ffed;
+}
+.gen-margin {
+  margin: auto 10% ;
+}
+
+.gen-heading-1 {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-weight: bold;
+  color: #0053d6;
+}
+
 .p-200{
-  padding-bottom: 200px;
+  padding-bottom: 100px;
 }
 
 .white-container {

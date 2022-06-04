@@ -1,8 +1,15 @@
 .landing-page {
     height: 600px;
-    background: url("../src/images/IP21_WebHeader_Kayak.jpeg") no-repeat center center fixed;
+    background: url("../src/images/IP21_WebHeader_Kayak.jpeg");
     background-size: cover;
     position: relative;
+}
+
+.landing-page-carousal {
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    height: 20em;
 }
 
 h1 {
@@ -27,17 +34,18 @@ h3 {
 
 .landing-page-content {
     text-align: center;
-    margin-top: 100px;
+    margin-top: 150px;
     background-color: #0053d6;
-    height: 400px;
+    height: 175px;
     opacity: 0.9;
 }
 
 .landing-page-content-text {
     position: absolute;
-    top: 50%;
+    top: 39%;
     left: 75%;
     transform: translate(-50%, -50%);
+    width: 40%;
 }
 
 .landing-page-welcome h3 {

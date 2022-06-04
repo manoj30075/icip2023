@@ -1,5 +1,5 @@
 import React from "react";
-import { Row, Col } from "react-bootstrap";
+import { Row, Col, Carousel } from "react-bootstrap";
 import "./landingPage.css";
 
 const importantDateNames = {
@@ -89,7 +89,7 @@ const LandingPage = () => {
     return (
       <div
         className="landing-page-important-dates"
-        style={{ padding: 20, marginBottom: 10 }}
+        style={{ padding: 20, marginBottom: 10, minHeight: 247.5 }}
       >
         <p style={{ color: "#0053d6", fontSize: 28, textAlign: "left" }}>
           Organizing Committee
@@ -126,7 +126,7 @@ const LandingPage = () => {
   const renderContactCommittee = () => {
     return (
       <div className="landing-page-important-dates" style={{ padding: 20 }}>
-        <p style={{ color: "#0053d6", fontSize: 28, textAlign: "left" }}>
+        <p style={{ color: "#0053d6", fontSize: 28, textAlign: "center" }}>
           Contact
         </p>
         <table style={{ width: "100%" }}>
@@ -136,7 +136,7 @@ const LandingPage = () => {
                 <tr>
                   <td
                     style={{
-                      textAlign: "left",
+                      textAlign: "center",
                       color: "#123693",
                     }}
                   >
@@ -144,7 +144,7 @@ const LandingPage = () => {
                   </td>
                   <td
                     style={{
-                      textAlign: "left",
+                      textAlign: "center",
                     }}
                   >
                     {member.email}
@@ -161,11 +161,19 @@ const LandingPage = () => {
   return (
     <div className="p-200">
       <Row>
-        <Col className="landing-page">
+        <Col
+          className="landing-page"
+          style={{
+            background: require("../src/images/IP21_WebHeader_Kayak.jpeg"),
+          }}
+        >
           <Col md={{ offset: 6 }} className="landing-page-content">
             <div className="landing-page-content-text">
-              <h1>IEEE INTELLIGENT VEHICLES SYMPOSIUM (IV 2023)</h1>
-              <h2>Anchorage, Alaska, USA June 4 – 7, 2023</h2>
+              <h1 style={{ fontSize: 20 }}>
+                IEEE INTELLIGENT VEHICLES SYMPOSIUM (IV 2023)
+              </h1>
+              <h2>Anchorage, Alaska, USA </h2>
+              <h2>June 4 – 7, 2023</h2>
             </div>
           </Col>
         </Col>
@@ -203,10 +211,14 @@ const LandingPage = () => {
         <Row>
           <Col md={6}>
             <Col>{renderImportantDates()}</Col>
-            <Col>{renderContactCommittee()}</Col>
           </Col>
           <Col md={6}>
             <Col>{renderOrganizingCommittee()}</Col>
+          </Col>
+        </Row>
+        <Row>
+          <Col md={{ offset: 2 }}>
+            <Col md={9}>{renderContactCommittee()}</Col>
           </Col>
         </Row>
       </div>
