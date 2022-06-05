@@ -99,6 +99,22 @@ const CallForPapers = () => {
       <h3 className="cfp-heading-1">Call for Papers</h3>
       {renderAuthorsNotes()}
       {renderTopicsOfInterest()}
+      <Row>
+        <Col className="white-container">
+          <h5>Important Dates</h5>
+          <ul>
+            <li>
+              <b>Paper Submission Deadline:</b>&nbsp; January 15, 2023
+            </li>
+            <li>
+              <b>Notification of Acceptance: </b>&nbsp; March 15, 2023
+            </li>
+            <li>
+              <b>Final Paper Submission: </b>&nbsp; March 30, 2023
+            </li>
+          </ul>
+        </Col>
+      </Row>
     </div>
   );
 };

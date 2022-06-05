@@ -55,8 +55,8 @@ const CallForTutorials = () => {
             <li>
               <b>Previous editions:</b>&nbsp; If the tutorial was given before,
               describe when and where it was given, and if and how it will be
-              modified for IEEE ICIP 2020. If possible, provide a link to slides
-              of the previous tutorial presentation.
+              modified for IEEE IV 2020 - IEEE IV 2022. If possible, provide a
+              link to slides of the previous tutorial presentation.
             </li>
             <li>
               <b>Presentation material:</b>&nbsp; If a draft of the tutorial

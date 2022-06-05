@@ -170,7 +170,7 @@ const LandingPage = () => {
           <Col md={{ offset: 6 }} className="landing-page-content">
             <div className="landing-page-content-text">
               <h1 style={{ fontSize: 20 }}>
-                IEEE INTELLIGENT VEHICLES SYMPOSIUM (IV 2023)
+                IEEE INTELLIGENT VEHICLES SYMPOSIUM IV 2023
               </h1>
               <h2>Anchorage, Alaska, USA </h2>
               <h2>June 4 – 7, 2023</h2>

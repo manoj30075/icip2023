@@ -8,7 +8,7 @@ const committee = [
     people: [
       {
         name: "Saif alZahir",
-        university: "Concordia University",
+        university: "Concordia University, Montreal, Canada",
         title: "General Chair",
         image: "./images/image2.png",
       },
@@ -25,15 +25,15 @@ const committee = [
     people: [
       {
         name: "Frederic Dufaux",
-        university: "CNRS",
+        university: "CNRS, France",
         title: "Technical Program Co-Chair",
         image: "./images/image6.jpg",
       },
       {
         name: "Meng Lu",
-        university: "",
+        university: "Peek Traffic B.V., Netherlands",
         title: "Technical Program Co-Chair",
-        image: "./images/dummy.jpeg",
+        image: "./images/image10.jpg",
       },
     ],
   },
@@ -53,26 +53,26 @@ const committee = [
     people: [
       {
         name: "Brendan Morris",
-        university: "",
+        university: "University of Nevada, Las Vegas, United States",
         title: "Industry Chair ",
-        image: "./images/dummy.jpeg",
+        image: "./images/image11.jpg",
       },
     ],
   },
   {
-    title: "Challenge Co-Chairs",
+    title: "Competition Challenge Co-Chairs",
     people: [
       {
         name: "Rony Ferzli",
         university: "Intel Corporation",
-        title: "Challenge Co-Chair",
+        title: "Competition Challenge Co-Chair",
         image: "./images/image8.png",
       },
       {
         name: "Ignacio Alvarez",
-        university: "Intel Corporation",
-        title: "Challenge Co-Chair",
-        image: "./images/dummy.jpeg",
+        university: "Intel, USA",
+        title: "Competition Challenge Co-Chair",
+        image: "./images/image12.jpg",
       },
     ],
   },
@@ -80,20 +80,20 @@ const committee = [
     title: "Tutorial Co-Chair",
     people: [
       {
-        name: "Johannes Betz",
-        university: "",
+        name: "Johannes Betz, M.A.",
+        university: "University of Pennsylvania, USA",
         title: "Tutorial Co-Chair",
         image: "./images/image3.jpg",
       },
     ],
   },
   {
-    title: "SS Chair",
+    title: "Special Sessions Co-Chair",
     people: [
       {
         name: "Arash Mohammadi",
         university: "Concordia University",
-        title: "SS Chair",
+        title: "Special Sessions Co-Chair",
         image: "./images/image1.jpg",
       },
     ],
@@ -149,7 +149,7 @@ const Committee = () => {
                         {person.university}
                       </div>
                       <div className="committee-member-title">
-                        {person.title}
+                        <b>{person.title}</b>
                       </div>
                     </Col>
                   </Row>

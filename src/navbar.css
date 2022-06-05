@@ -1,3 +1,15 @@
 .bg-dark-navbar {
     background-color: #0053d6!important;
 }
+
+.nav-bar-ieee {
+    font-size: 18px;
+}
+
+.nav-link-ieee {
+    color: white!important;
+}
+
+.nav-link-ieee a {
+    color: white!important;
+}

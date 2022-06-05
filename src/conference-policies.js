@@ -17,17 +17,17 @@ const ConferencePolicies = () => {
         <h4>Non-Presented Paper (No-Show) Policy</h4>
         <Col className="white-container">
           <p>
-            <b>Non-Presented Paper (No-Show) Policy:</b> The IEEE Signal
-            Processing Society enforces a "no show" policy. Any accepted paper
-            included in the final program is expected to have at least one
-            author or qualified proxy attend and present the paper at the
-            conference. Authors of the accepted papers included in the final
-            program who do not attend and present at the conference will be
-            added to a "No Show List", compiled by the Society. The "no show"
-            papers will not be published by IEEE on IEEE Xplore® or other public
-            access forums, but these papers will be distributed as part of the
-            on-site electronic proceedings and the copyright of these papers
-            will belong to the IEEE.
+            <b>Non-Presented Paper (No-Show) Policy:</b> The IEEE IV 2023
+            enforces a "no show" policy. Any accepted paper included in the
+            final program is expected to have at least one author or qualified
+            proxy attend and present the paper at the conference. Authors of the
+            accepted papers included in the final program who do not attend and
+            present at the conference will be added to a "No Show List",
+            compiled by the Society. The "no show" papers will not be published
+            by IEEE on IEEE Xplore® or other public access forums, but these
+            papers will be distributed as part of the on-site electronic
+            proceedings and the copyright of these papers will belong to the
+            IEEE.
           </p>
           <p>
             Note: For poster sessions, if the speaker is not present in front of
@@ -43,17 +43,17 @@ const ConferencePolicies = () => {
             the Technical Program Chair to the Vice President Conferences.
           </p>{" "}
           <p>
-            The Signal Processing Society values diversity. Authors who
-            anticipate inability to travel to a conference because of a
-            government-imposed travel restriction are still encouraged to submit
-            papers. Such papers will be reviewed and accepted on their own merit
-            for publication in Conference Proceedings, without any knowledge of
-            the author’s travel restriction. Within one week of paper acceptance
-            notification, travel-restricted authors must notify the Technical
-            Program Chair of the conference with proof of their restriction.
-            Substitute presenters may be possible or, depending on conference
-            resources, other accommodations may be available, such as a remote
-            presentation or pre-recorded video.
+            The IEEE IV 2023 values diversity. Authors who anticipate inability
+            to travel to a conference because of a government-imposed travel
+            restriction are still encouraged to submit papers. Such papers will
+            be reviewed and accepted on their own merit for publication in
+            Conference Proceedings, without any knowledge of the author’s travel
+            restriction. Within one week of paper acceptance notification,
+            travel-restricted authors must notify the Technical Program Chair of
+            the conference with proof of their restriction. Substitute
+            presenters may be possible or, depending on conference resources,
+            other accommodations may be available, such as a remote presentation
+            or pre-recorded video.
           </p>
         </Col>
         <h4>Refund Policy</h4>
@@ -88,7 +88,7 @@ const ConferencePolicies = () => {
           <p>
             The conference accepts payment by credit cards, check and bank
             transfer. Attendees not using credit cards must forward a check or
-            money order payable to IEEE ICIP 2021 and drawn on a US bank or a US
+            money order payable to IEEE IV 2023 and drawn on a US bank or a US
             branch of an International bank for the total registration amount in
             US Dollars. There will be a USD $50 fee assessed for returned checks
             or for chargebacks issued on valid credit card charges. Registration

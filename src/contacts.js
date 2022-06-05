@@ -5,6 +5,11 @@ const contacts = [
   {
     id: 0,
     name: "General Chair",
+    email: "saifalzahir@gmail.com",
+  },
+  {
+    id: 0,
+    name: "Finance Chair",
     email: "sadeee@rit.edu",
   },
   {
@@ -70,7 +75,7 @@ const Contacts = () => {
       <h3 className="gen-heading-1">Contacts</h3>
       {/*render in table*/}
       <Row>
-        <Col md={12} className="white-container">
+        <Col md={{ offset: 3, span: 6 }} className="white-container">
           <Table responsive>
             <thead>
               <tr style={{ color: "#123693" }}>
