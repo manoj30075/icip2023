@@ -13,3 +13,8 @@
 .nav-link-ieee a {
     color: white!important;
 }
+
+.navbar-brand {
+    font-size: 25px!important;
+    font-weight: 800;
+}
